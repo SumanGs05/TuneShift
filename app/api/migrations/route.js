@@ -42,7 +42,7 @@ export async function POST(request) {
     const { source, destination, report } = await request.json();
 
     if (!session?.userId) {
-      // Still return success for demo mode
+      
       return NextResponse.json({
         success: true,
         migration: {
