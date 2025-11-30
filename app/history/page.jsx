@@ -24,7 +24,7 @@ export default function HistoryPage() {
           const data = await response.json();
           setMigrations(data.migrations || []);
         } else {
-          // Demo data for testing
+          
           setMigrations([
             {
               id: '1',
