@@ -84,7 +84,7 @@ export default function HistoryPage() {
         }
       } catch (error) {
         console.error('Error fetching migrations:', error);
-        // Use demo data on error
+        
         setMigrations([]);
       } finally {
         setLoading(false);
