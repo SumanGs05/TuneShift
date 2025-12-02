@@ -5,7 +5,7 @@ const prisma = new PrismaClient();
 async function main() {
   console.log('🌱 Seeding database...');
 
-  // Create a demo user
+  
   const user = await prisma.user.upsert({
     where: { email: 'demo@tuneshift.app' },
     update: {},
@@ -17,7 +17,7 @@ async function main() {
 
   console.log('✓ Created demo user:', user.email);
 
-  // Create some sample migrations
+  
   const migrations = [
     {
       userId: user.id,
